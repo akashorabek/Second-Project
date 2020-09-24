@@ -1,0 +1,46 @@
+.main_counter{
+    background-image: url(../../img/bcg/dark-img.jpg);
+    
+    position: relative;
+}
+.counters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.dark_bg{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.count{
+    text-align: center;
+    width: 33.33%;
+    z-index: 2;
+}
+.count:nth-child(2){
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+}
+.count>img{
+    height: 50px;
+    width: auto;
+}
+.count>.hr{
+    
+    height: 6px;
+}
+.count>h4{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+.count>p{
+    font-size: 16px;
+    color: white;
+}

@@ -1,0 +1,29 @@
+.under_header{
+    background-image: url("../../img/bcg/slider-1.jpg");
+    background-image: cover;
+    
+}
+.under_block{
+    width: 450px;
+    background-color: rgba(255, 255, 255, .8);
+    margin-left: 5%;
+    padding: 5%;
+    line-height: 1.5;
+    letter-spacing: 0.10em;
+    
+}
+.under_block>p{
+    font-size: 18px;
+    color: #707070;
+    width: 90%;
+    text-transform: uppercase;
+}
+.under_block>h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10% 0;
+    width: 70%;
+}
+
+    
