@@ -12,36 +12,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <meta name="viewport" content="width = device - width, initial-scale=1">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="Header container">
-        <div class="header_logo">
-            <a href="#">
-                <img src="img/widgets/logo.png" alt="logo">
-            </a>
+    <header class="Header">
+        <div class="header_container container">
+            <div class="header_logo">
+                <a href="#">
+                    <img src="img/widgets/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header_nav">
+                <ul>
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li class="pages_tab">
+                        <a href="#">pages</a><i class="fas fa-chevron-down"></i>
+                        <div class="pages_modal">
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blank Page</a></li>
+                                <li><a href="#">Plans</a></li>
+                                <li><a href="#">404 page</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="elements_tab">
+                        <a href="#">elements</a><i class="fas fa-chevron-down"></i>
+                        <div class="elements_modal">
+                            <ul>
+                                <li><a href="#">Typography</a></li>
+                                <li><a href="#">Buttons</a></li>
+                                <li><a href="#">Accordions & Tabs</a></li>
+                                <li><a href="#">Forms</a></li>
+                                <li><a href="#">Tables</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="header_burger">
+                <span></span>
+            </div>
+            
         </div>
-        <div class="header_nav">
-            <ul>
-                <li class="active"><a href="#">home</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">contact us</a></li>
-                <li><a href="#">pages <i class="fas fa-chevron-down"></i></i></a></li>
-                <li><a href="#">elements <i class="fas fa-chevron-down"></i></i></a></li>
-            </ul>
-        </div>
-        <div class="mobile_bar fas fa-bars"></div>
+        
     </header>
-    <section class="under_header">
-        <div class="under_block">
-            <p>Solving challenges matter a lot of in interior design business</p>
-            <h2>Top Notch Architecture Solutions</h2>
-            <a class="main_btn_orange" href="">get quote</a>
+    <section class="main_slider">
+        <div class="under_header">
+            <div class="under_block">
+                <p>Solving challenges matter a lot of in interior design business</p>
+                <h2>Top Notch Architecture Solutions</h2>
+                <a class="main_btn_orange" href="">get quote</a>
+            </div>
+        </div>
+        <div class="under_header2">
+            <div class="under_block">
+                <p>Solving challenges matter a lot of in interior design business</p>
+                <h2>Traditional Kitchen Tiles</h2>
+                <a class="main_btn_orange" href="">get quote</a>
+            </div>
         </div>
     </section>
+    
     <section class="main_first_block container section_paddings">
         <div class="about_row">
             <div class="about_text section_tops">
@@ -49,22 +89,39 @@
                 <div class="hl"></div>
                 <div class="tab_block">
                     <ul>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">WHY CHOOSE US</a></li>
-                        <li><a href="#">OUR MISSION</a></li>
+                        <li><a href="#" class="tabs_a active_tabs">ABOUT US</a></li>
+                        <li><a href="#" class="tabs_a">WHY CHOOSE US</a></li>
+                        <li><a href="#" class="tabs_a">OUR MISSION</a></li>
                     </ul>
+                </div>
+                <div class="about_row_tabs active_tabs">
                     <p>Archtera offers the widest and best in class range in furniture, home furnishings & decor,
                         modular kitchens, home improvement and more. We promise to facilitate our customers with a
-                        unique and personalized shopping experience.</p>
-
+                        unique and personalized shopping experience.
+                    </p>
+                    <div class="about_btns">
+                        <a class="main_btn_orange" href="#">GET IN TOUCH</a>
+                        <a class="main_btn_orange transparent_btn" href="#">READ MORE ABOUT US</a>
+                    </div>
                 </div>
-
-
-
-                <div class="about_btns">
-                    <a class="main_btn_orange" href="#">GET IN TOUCH</a>
-                    <a class="main_btn_orange transparent_btn" href="#">READ MORE ABOUT US</a>
+                <div class="about_row_tabs">
+                    <p>As a team of architects and designers, we are uniquely qualified to translate your property vision into visuals that will transport homebuyers and investors alike.
+                    </p>
+                    <div class="about_btns">
+                        
+                        <a class="main_btn_orange transparent_btn" href="#">READ MORE ABOUT US</a>
+                    </div>
                 </div>
+                <div class="about_row_tabs">
+                    <p>To form a team dedicated to providing exceptional customer service. We will provide a professional approach to constructing exceptional quality projects which meet budget and schedule goals.
+                    </p>
+                    <div class="about_btns">
+                        
+                        <a class="main_btn_orange transparent_btn" href="#">READ MORE ABOUT US</a>
+                    </div>
+                </div>
+                
+
             </div>
             <div class="about_img">
 
@@ -138,13 +195,13 @@
         </div>
         <div>
             <div class="project_tabs addition_padding">
-                <button>ALL</button>
+                <button class="active_tabs">ALL</button>
                 <button>ARCHITECTURE</button>
                 <button>INTERIOR DESIGN</button>
                 <button>HOUSE RENOVATION</button>
             </div>
             <div class="wrap_elements addition_padding">
-                <div class="project_elem">
+                <div class="project_elem active_block">
                     <img src="img/projects/1-thump.jpg" alt="">
                     <div class="project_inner">
                         <h3>THE NOOK HOUSE</h3>
@@ -152,56 +209,56 @@
                         <p>ARCHITECTURE<a href="#" class="fas fa-search-plus"></a></p>
                     </div>
                 </div>
-                <div class="project_elem">
-                    <img src="img/projects/1-thump.jpg" alt="">
+                <div class="project_elem active_block">
+                    <img src="img/projects/2-thump.jpg" alt="">
                     <div class="project_inner">
                         <h3>THE NOOK HOUSE</h3>
                         <div class="hr"></div>
                         <p>ARCHITECTURE<a href="#" class="fas fa-search-plus"></a></p>
                     </div>
                 </div>
-                <div class="project_elem">
-                    <img src="img/projects/1-thump.jpg" alt="">
+                <div class="project_elem active_block">
+                    <img src="img/projects/3-thump.jpg" alt="">
                     <div class="project_inner">
                         <h3>THE NOOK HOUSE</h3>
                         <div class="hr"></div>
                         <p>ARCHITECTURE<a href="#" class="fas fa-search-plus"></a></p>
                     </div>
                 </div>
-                <div class="project_elem">
-                    <img src="img/projects/1-thump.jpg" alt="">
+                <div class="project_elem active_block">
+                    <img src="img/projects/4-thump.jpg" alt="">
                     <div class="project_inner">
                         <h3>THE NOOK HOUSE</h3>
                         <div class="hr"></div>
                         <p>ARCHITECTURE<a href="#" class="fas fa-search-plus"></a></p>
                     </div>
                 </div>
-                <div class="project_elem">
-                    <img src="img/projects/1-thump.jpg" alt="">
+                <div class="project_elem active_block">
+                    <img src="img/projects/5-thump.jpg" alt="">
                     <div class="project_inner">
                         <h3>THE NOOK HOUSE</h3>
                         <div class="hr"></div>
                         <p>ARCHITECTURE<a href="#" class="fas fa-search-plus"></a></p>
                     </div>
                 </div>
-                <div class="project_elem">
-                    <img src="img/projects/1-thump.jpg" alt="">
+                <div class="project_elem active_block">
+                    <img src="img/projects/6-thump.jpg" alt="">
                     <div class="project_inner">
                         <h3>THE NOOK HOUSE</h3>
                         <div class="hr"></div>
                         <p>ARCHITECTURE<a href="#" class="fas fa-search-plus"></a></p>
                     </div>
                 </div>
-                <div class="project_elem">
-                    <img src="img/projects/1-thump.jpg" alt="">
+                <div class="project_elem active_block">
+                    <img src="img/projects/7-thump.jpg" alt="">
                     <div class="project_inner">
                         <h3>THE NOOK HOUSE</h3>
                         <div class="hr"></div>
                         <p>ARCHITECTURE<a href="#" class="fas fa-search-plus"></a></p>
                     </div>
                 </div>
-                <div class="project_elem">
-                    <img src="img/projects/1-thump.jpg" alt="">
+                <div class="project_elem active_block">
+                    <img src="img/projects/8-thump.jpg" alt="">
                     <div class="project_inner">
                         <h3>THE NOOK HOUSE</h3>
                         <div class="hr"></div>
@@ -250,17 +307,29 @@
                             <h3>What are the services we provide?</h3>
                             <div class="question_circle"><i class="fas fa-chevron-down"></i></div>
                         </div>
-                    </div>
-                    <div class="faq_item">
-                        <div class="question_item">
-                            <h3>What are the services we provide?</h3>
-                            <div class="question_circle"><i class="fas fa-chevron-down"></i></div>
+                        <hr>
+                        <div class="question_discription">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum esse quae dolorum molestiae, officia eum vel reprehenderit praesentium aut tempora quasi quod animi non doloribus minus minima porro! Provident, vel.</p>
                         </div>
                     </div>
                     <div class="faq_item">
                         <div class="question_item">
-                            <h3>What are the services we provide?</h3>
+                            <h3>Why are we unique and special?</h3>
                             <div class="question_circle"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <hr>
+                        <div class="question_discription">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum esse quae dolorum molestiae, officia eum vel reprehenderit praesentium aut tempora quasi quod animi non doloribus minus minima porro! Provident, vel.</p>
+                        </div>
+                    </div>
+                    <div class="faq_item">
+                        <div class="question_item">
+                            <h3>What are the process of your project initiation?</h3>
+                            <div class="question_circle"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <hr>
+                        <div class="question_discription">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum esse quae dolorum molestiae, officia eum vel reprehenderit praesentium aut tempora quasi quod animi non doloribus minus minima porro! Provident, vel.</p>
                         </div>
                     </div>
                 </div>
@@ -311,9 +380,144 @@
                     <p>Sydney</p>
                 </div>
             </div>
+            <div class="review_item">
+                <img src="img/widgets/user-img-2.jpg" alt="">
+                    <p>
+                        Archtera has provided a truly professional service. The design and
+                        implementation process was well coordinated. We are very satisfied with the final
+                        outcome
+                        and would sincerely recommend Archtera to all for undertaking works where
+                        quality is utmost...
+                    </p>
+                    <div class="review_bottom">
+                        <h4>Mathew Faris</h4>
+                        <p>Armidale</p>
+                    </div>
+                </div>
+                <div class="review_item">
+                    <img src="img/widgets/user-img-3.jpg" alt="">
+                    <p>
+                        Working with Archtera has been a hassle free experience for me. All I had to do was
+                        tell them how I wanted my space to be and they have delivered exactly the way I pictured it.So,
+                        go ahead with Archtera for a wonderful professional experience, and am sure they will
+                        make your dream into reality....
+                    </p>
+                    <div class="review_bottom">
+                        <h4>John Morison</h4>
+                        <p>New York</p>
+                    </div>
+                </div>
         </div>
     </section>
-
+    <section class="form_section">
+        <div class="form_section_inner container section_paddings">
+            <div class="left_side">
+                <div class="section_tops">
+                    <h2 class="section_titles">GET IN TOUCH</h2>
+                    <div class="hl"></div>
+                </div>
+                <div class="form_content">
+                    <div class="form_inner">
+                        <div class="mail_box">
+                            <div class="form_elem">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="form_elem">
+                                <input type="email" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="tel_box">
+                            <div class="form_elem">
+                                <input type="tel" placeholder="Phone Number">
+                            </div>
+                            <div class="form_elem">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textarea">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="button_box">
+                    <button class="main_btn_orange">SEND MESSAGE</button>
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="right_side_item">
+                    <i class="fas fa-phone"></i>
+                    <div class="item_title">
+                        <h3>PHONE</h3>
+                        <p>518-420-4264</p>
+                        <p>518-698-1920</p>
+                    </div>
+                </div>
+                <div class="right_side_item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="item_title">
+                        <h3>E-MAIL</h3>
+                        <p>info@samplemail.com</p>
+                        <p>support@samplemail.com</p>
+                    </div>
+                </div>
+                <div class="right_side_item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="item_title">
+                        <h3>ADDRESS</h3>
+                        <p>1268 Hardesty Street</p>
+                        <p>Colonie, New York.
+                            12205</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_top_content container section_paddings">
+                <div class="footer_top_item">
+                    <img src="img/widgets/logo-light.svg" alt="">
+                    <p>Archtera offers the widest and best in class range in furniture, home furnishings & decor, modular kitchens, home improvement and more.</p>
+                </div>
+                <div class="footer_top_item">
+                    <h2>QUICK LINK</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Home</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">About Us</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Services</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Contact Us</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Privacy & Security</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top_item">
+                    <h2>FOLLOW US</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Facebook</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Twitter</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Google+</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Youtube</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Instagram</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top_item">
+                    <h2>SUBSCRIBE</h2>
+                    <p>Join our Newsletter for latest updates from us</p>
+                    <input type="email" placeholder="Enter your e-mail">
+                    <button class="main_btn_orange"><i class="fas fa-envelope"></i>SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_content container">
+                <h2>Copyright 2020. All Rights Reserved</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/variables/slick.min.js"></script>
+    <script src="javascript/variables/js.js"></script>
 </body>
 
 </html>

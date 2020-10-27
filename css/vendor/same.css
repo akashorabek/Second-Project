@@ -19,6 +19,8 @@
     transition: .5s;
     text-transform: uppercase;
     border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
 }
 .main_btn_orange:hover{
     background-color: #282828;
@@ -43,4 +45,10 @@
     width: 30%;
     background-color: #f5b616;
     margin: 7% auto;
+}
+.slick-track{
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
 }

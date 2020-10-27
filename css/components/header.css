@@ -1,11 +1,16 @@
 .Header {
+    background-color: white;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+.header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
-    
+    padding: 30px 0; 
 }
-
 .header_logo img {
     width: 200px;
     height: 50px;
@@ -13,19 +18,21 @@
 .header_nav{
  margin-left: 100px;
 }
-
-.mobile_bar.fas{
+.header_burger {
     display: none;
 }
+
 .header_nav>ul {
     display: flex;
+   
+    
 }
 .header_nav>ul>li{
     margin-left: 50px;
     padding: 15px 0;
     border-bottom: 3px solid transparent;
-    transition: .8s;
-    
+    transition: .4s;
+    position: relative;
 }
 .header_nav>ul>li.active{
     border-color:#f5b616 ;
@@ -40,4 +47,52 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
+}
+.header_nav>ul>li i {
+    font-size: 13px;
+    margin-left: 5px;
+    transition: .3s;
+}
+.header_nav>ul>li.active_icon i{
+    transform: rotate(180deg);
+}
+.pages_modal {
+    position: absolute;
+    z-index: 1;
+    bottom: -245px;
+    left: 0;
+    display: none;
+}
+.pages_modal li{
+    padding: 15px 30px;
+    background-color: white;
+}
+.pages_modal li a {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    transition: .3s;
+}
+.pages_modal li:hover a {
+    color: #f5b616;
+}
+.elements_modal {
+    position: absolute;
+    z-index: 1;
+    bottom: -275px;
+    left: 0;
+    display: none;
+}
+.elements_modal li {
+    padding: 15px 30px;
+    background-color: white;
+}
+.elements_modal li a {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    transition: .3s;
+}
+.elements_modal li:hover a{
+    color: #f5b616;
 }

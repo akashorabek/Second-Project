@@ -13,16 +13,33 @@
     justify-content: space-between;
     align-items: center;
     padding: 4%;
-    
+    cursor: pointer;
+}
+.question_item.icon_active i {
+    transform: rotate(180deg);
+}
+.question_discription {
+    padding: 4%;
+    display: none;
+}
+.question_discription p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 10px;
+    color: #707070;
 }
 .question_circle{
     border: 3px solid #f5b616;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.question_circle i {
+    transition: .3s;
+    
 }
 .faq_lables{
     margin-bottom: 8%;
@@ -31,14 +48,18 @@
     margin-bottom: 3%;
 }
 .form_item>input{
-    width: 100%;
+    width: 95%;
     padding: 3%;
+    border: 1px solid rgb(197, 197, 197);
+    outline: none;
 }
 .form_item>textarea{
-    width: 100%;
+    width: 95%;
     height: 160px;
     padding: 3%;
     resize: vertical;
+    border: 1px solid rgb(197, 197, 197);
+    outline: none;
 }
 
 .reviews {
@@ -46,7 +67,27 @@
     z-index: 4;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
-
+.reviews .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviews .slick-dots li {
+    margin: 20px 10px;
+}
+.reviews .slick-dots li button {
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #838386;
+    border: none;
+    outline: none;
+    transition: .4s;
+    cursor: pointer;
+}
+.reviews .slick-dots li.slick-active button{
+    background-color: #f5b316;
+}
 .reviews::after {
     content: " ";
     background-color: #f3f3f3;
@@ -70,9 +111,10 @@
 }
 
 .review_item {
-    padding: 2% 0;
+    padding: 1% 1%;
     text-align: center;
     line-height: 1.8;
+    outline: none;
 }
 
 .review_item p {
@@ -98,3 +140,4 @@
 .main_contacts {
     background-color: #f8f9fa;
 }
+

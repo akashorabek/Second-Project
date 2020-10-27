@@ -1,7 +1,45 @@
+.main_slider {
+    position: relative;
+}
+.main_slider .slick-dots {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    margin-right: 15px;
+}
+.main_slider .slick-dots li {
+    margin-bottom: 10px;
+}
+.main_slider .slick-dots li button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: .3s;
+    border-bottom: 3px solid transparent;
+}
+.main_slider .slick-dots button:hover {
+    border-color: white;
+}
+.main_slider .slick-dots li.slick-active button {
+    border-color: white;
+}
+.main_slider .slick-track {
+    display: block;
+}
 .under_header{
     background-image: url("../../img/bcg/slider-1.jpg");
     background-image: cover;
-    
+    height: 500px;
+    outline: none;
+}
+.under_header2 {
+    background-image: url('../../img/bcg/slider-2.jpg');
+    background-image: cover;
+    height: 500px;
+    outline: none;
 }
 .under_block{
     width: 450px;
@@ -10,7 +48,7 @@
     padding: 5%;
     line-height: 1.5;
     letter-spacing: 0.10em;
-    
+    height: 100%;
 }
 .under_block>p{
     font-size: 18px;
