@@ -49,6 +49,7 @@
     line-height: 1.5;
     letter-spacing: 0.10em;
     height: 100%;
+    
 }
 .under_block>p{
     font-size: 18px;
@@ -60,7 +61,7 @@
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 10% 0;
+    margin: 15% 0;
     width: 70%;
 }
 

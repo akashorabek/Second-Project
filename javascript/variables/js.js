@@ -558,7 +558,12 @@ $('.header_burger').click(function(){
     $('.header_burger, .header_nav').toggleClass('active_menu')
     $('body').toggleClass('lock')
 })
-
+// $('.fas.fa-search-plus').magnificPopup({
+//     type: 'image',
+//     gallery:{
+//         enabled:true
+//       }
+// })
 
 let tabsTitle = document.querySelectorAll('.tabs_a');
 let tabsContent = document.querySelectorAll('.about_row_tabs');
